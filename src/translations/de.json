@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "Comms Manager",
+    "short_description": "Verknüpfte Incidents bei der Aktualisierung von Problem-Tickets aktualisieren",
+    "long_description": "Diese App ermöglicht es Ihnen, alle verknüpften Incidents zu aktualisieren, wenn Sie ein Update für ein Problem-Ticket einreichen.",
+    "title": "Comms Manager",
+    "parameters": {
+      "maxIncidentsToUpdate": {
+        "label": "Maximale Anzahl der Incidents, die in einem einzigen Update verarbeitet werden",
+        "help_text": "Die maximale Anzahl verknüpfter Incident-Tickets, die verarbeitet werden, wenn ein Problem-Ticket aktualisiert wird. Incidents werden in Gruppen von 100 gebündelt. Höhere Limits ermöglichen die Aktualisierung von mehr Incidents, benötigen aber aufgrund der Ratenbegrenzung länger zum Abschluss. Der Standard sind 3000 Incidents."
+      }
+    }
+  },
+  "ticket_sidebar": {
+    "title": "Verknüpfte Incidents aktualisieren",
+    "instructions": "Wenn Sie dieses Problem-Ticket aktualisieren, gelten diese Aktionen für alle ungelösten verknüpften Incidents",
+    "apply_comment_title": "Kommentar zu Incidents kopieren",
+    "apply_comment_description": "Ihr Kommentar wird zu allen ungelösten Vorfällen kopiert. Öffentliche Kommentare bleiben öffentlich, interne Kommentare bleiben intern.",
+    "sync_status_title": "Status zu Incidents synchronisieren",
+    "sync_status_description": "Alle ungelösten Incidents werden aktualisiert, um dem Status dieses Problem-Tickets zu entsprechen."
+  }
+}

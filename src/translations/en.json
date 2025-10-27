@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "Comms Manager",
+    "short_description": "Update linked incidents when updating problem tickets",
+    "long_description": "This app allows you to update all linked incidents when you submit an update for a problem ticket.",
+    "title": "Comms Manager",
+    "parameters": {
+      "maxIncidentsToUpdate": {
+        "label": "Maximum number of incidents to process in a single update",
+        "helpText": "The maximum number of linked incident tickets that will be processed when a problem ticket is updated. Incidents are batched into groups of 100. Higher limits allow more incidents to be updated but will take longer to complete due to rate limiting. The default is 3000 incidents."
+      }
+    }
+  },
+  "ticket_sidebar": {
+    "title": "Update Linked Incidents",
+    "instructions": "When you update this problem ticket, these actions will apply to all unsolved linked incidents",
+    "apply_comment_title": "Copy comment to incidents",
+    "apply_comment_description": "Your comment will be added to all unsolved incidents. Public comments will be public, while internal comments will remain internal.",
+    "sync_status_title": "Sync status to incidents", 
+    "sync_status_description": "All unsolved incidents will be updated to match this problem ticket's status."
+  }
+}

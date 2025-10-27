@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "Mise à Jour d'Incidents",
+    "short_description": "Mettre à jour les incidents liés lors de la mise à jour des tickets problème",
+    "long_description": "Cette application vous permet de mettre à jour tous les incidents liés lorsque vous soumettez une mise à jour pour un ticket problème.",
+    "title": "Mise à Jour d'Incidents",
+    "parameters": {
+      "maxIncidentsToUpdate": {
+        "label": "Nombre maximum d'incidents à traiter en une seule mise à jour",
+        "help_text": "Le nombre maximum de tickets d'incident liés qui seront traités lorsqu'un ticket problème est mis à jour. Les incidents sont regroupés en lots de 100. Des limites plus élevées permettent de mettre à jour plus d'incidents mais prendront plus de temps à compléter en raison des limitations de taux. La valeur par défaut est 3000 incidents."
+      }
+    }
+  },
+  "ticket_sidebar": {
+    "title": "Mettre à Jour les Incidents Liés",
+    "instructions": "Lorsque vous mettez à jour ce ticket problème, ces actions s'appliqueront à tous les incidents ouverts liés :",
+    "apply_comment_title": "Copier le commentaire aux incidents",
+    "apply_comment_description": "Votre commentaire sera copié vers tous les incidents ouverts. Les commentaires publics resteront publics, les commentaires internes resteront internes.",
+    "sync_status_title": "Faire correspondre le statut aux incidents", 
+    "sync_status_description": "Tous les incidents ouverts seront mis à jour pour correspondre au nouveau statut de ce ticket problème."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "Comms Manager",
+    "short_description": "Atualizar incidentes vinculados ao atualizar tickets de problema",
+    "long_description": "Este aplicativo permite atualizar todos os incidentes vinculados quando você envia uma atualização para um ticket de problema.",
+    "title": "Comms Manager",
+    "parameters": {
+      "maxIncidentsToUpdate": {
+        "label": "Número máximo de incidentes a processar em uma única atualização",
+        "help_text": "O número máximo de tickets de incidente vinculados que serão processados quando um ticket de problema for atualizado. Os incidentes são agrupados em lotes de 100. Limites mais altos permitem que mais incidentes sejam atualizados, mas levarão mais tempo para serem concluídos devido às limitações de taxa. O padrão é 3000 incidentes."
+      }
+    }
+  },
+  "ticket_sidebar": {
+    "title": "Atualizar incidentes vinculados",
+    "instructions": "Quando você atualizar este ticket de problema, essas ações se aplicarão a todos os incidentes vinculados não resolvidos",
+    "apply_comment_title": "Copiar comentário para incidentes",
+    "apply_comment_description": "Seu comentário será copiado para todos os incidentes não resolvidos. Comentários públicos permanecerão públicos, comentários internos permanecerão internos.",
+    "sync_status_title": "Sincronizar status para incidentes",
+    "sync_status_description": "Todos os incidentes não resolvidos serão atualizados para corresponder ao status deste ticket de problema."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Comms Manager",
+  "author": {
+    "name": "Sabra Funderburg",
+    "email": "sabra.funderburg@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "flexible": true,
+        "url": "assets/index.html"
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "maxIncidentsToUpdate",
+      "type": "number",
+      "default": 3000,
+      "required": false
+    }
+  ],
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}
